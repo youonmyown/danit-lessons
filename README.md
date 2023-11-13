@@ -1,2 +1,1 @@
-# danit-lessons-17
-danit course tasks
+# danit course tasks
