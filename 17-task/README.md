@@ -23,3 +23,7 @@ If flag --verbose is set, than script must log response from site and every user
 **Example:**
 
 `python main.py  https://jsonplaceholder.typicode.com/posts file.json --verbose`
+
+##Screenshots:
+![image](https://github.com/youonmyown/danit-lessons/assets/138362837/32343ab3-302b-404e-b989-26d450563fe2)
+![image](https://github.com/youonmyown/danit-lessons/assets/138362837/e7c2c56d-90a0-4436-9ece-2c56576f8171)
