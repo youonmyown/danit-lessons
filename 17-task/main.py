@@ -9,25 +9,23 @@ def get_user_ids(url, destination, verbose=False):
 
     try:
         response = requests.get(url)
+        response.raise_for_status()  # Бросаем исключение, если получен некорректный статус
 
         if verbose:
             logging.info(f"Response from {url}: {response.status_code}")
 
-        if response.status_code == 200:
-            data = response.json()
+        data = response.json()
 
-            user_ids = {f"User {entry['userId']}": str(entry['userId']) for entry in data}
+        user_ids = {f"User {entry['id']}": str(entry['userId']) for entry in data}
 
-            with open(destination, 'w') as file:
-                json.dump(user_ids, file, indent=2)
+        with open(destination, 'w') as file:
+            json.dump(user_ids, file, indent=2)
 
-            if verbose:
-                logging.info(f"User ids successfully written to {destination}")
-        else:
-            logging.error(f"Failed to retrieve data. Status code: {response.status_code}")
+        if verbose:
+            logging.info(f"User ids successfully written to {destination}")
 
-    except Exception as e:
-        logging.error(f"An error occurred: {str(e)}")
+    except requests.exceptions.RequestException as e:
+        logging.error(f"Failed to retrieve data. Error: {str(e)}")
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Get user ids from a specified URL and write them to a file.")
