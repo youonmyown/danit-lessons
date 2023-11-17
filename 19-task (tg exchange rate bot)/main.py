@@ -28,11 +28,11 @@ def process_currency_choice(message):
 
         chosen_currency = message.text.upper()
         if chosen_currency in data['rates']:
-            rate_to_usd = data['rates'][chosen_currency]
+            rate_to_eur = data['rates'][chosen_currency]
 
-            uah_to_usd = 1 / data['rates']['UAH']
+            uah_to_eur = data['rates']['UAH']
 
-            rate_to_uah = rate_to_usd / uah_to_usd
+            rate_to_uah = uah_to_eur / rate_to_eur
 
             bot.send_message(message.chat.id, f'{chosen_currency} to UAH rate: {rate_to_uah:.2f}')
 
