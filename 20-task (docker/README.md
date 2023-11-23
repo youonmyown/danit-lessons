@@ -1,4 +1,6 @@
 ## Usage
+Copy `Dockerfile`:
+![image](https://github.com/youonmyown/danit-lessons/assets/138362837/825048f6-d306-4084-a743-2966c6e87b67)
 
 Build image:
 ```
