@@ -29,7 +29,7 @@ nano ../pipeline/logstash.conf
 ```
 ![image](https://github.com/youonmyown/danit-lessons/assets/138362837/1f639dc5-7c19-487e-baef-e556b5478a52)
 
-Next we need to install Filebit on the local machine by following [these instructions]([https://www.example.com](https://www.elastic.co/guide/en/beats/filebeat/current/filebeat-installation-configuration.html)https://www.elastic.co/guide/en/beats/filebeat/current/filebeat-installation-configuration.html)
+Next we need to install Filebit on the local machine by following [these instructions](https://www.elastic.co/guide/en/beats/filebeat/current/filebeat-installation-configuration.html)
 After installation we need to change the Filebit configuration file: 
 ```
 nano /etc/filebeat/filebeat.yml
