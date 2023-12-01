@@ -5,8 +5,8 @@ services:
     image: mysql:latest
     environment:
       MYSQL_ROOT_PASSWORD: rootpass
-      #MYSQL_DATABASE: your_database
-      #MYSQL_USER: your_user
+      #MYSQL_DATABASE: database
+      #MYSQL_USER: user
       #MYSQL_PASSWORD: changeme
     ports:
       - 3306:3306
