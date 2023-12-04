@@ -5,7 +5,7 @@ docker compose up
 ![image](https://github.com/youonmyown/danit-lessons/assets/138362837/5fc420b2-0347-4cc2-a26b-3c0c3e189cb8)
 
 ### Waiting for the `setup_db` container to exit with code 0
-![image](https://github.com/youonmyown/danit-lessons/assets/138362837/945eb07a-ef4e-4930-bdc5-6ee1765c1a86)
+![image](https://github.com/youonmyown/danit-lessons/assets/138362837/4f3bf44d-f59d-43ee-9eaf-3f14daa401f3)
 
 ### Go to the web interface:
 
