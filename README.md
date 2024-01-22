@@ -12,5 +12,5 @@
 22. Add task
    - completed task 22
 23. Without task
-24. Add task (пара контейнеров с mysql, пайтон скриптом для записей в mysql и вебка для mysql)
+24. Add task
    - completed task 24
